@@ -10,7 +10,7 @@ Crear 2 contenedores utilizando docker compose en su versión 3, el primer conte
 
 Trate de utilizar el API de Instagram y de Facebook, ya que la de instagram al parecer será deprecada, sin tener resultados positivos.
 
-### Work arround
+### Work around
 
 Busque en google y gracias a algunos consejos de Moisés, me puse a buscar si existia alguna librería que ya hiciera todo el manejo de sesión y de subida de archivos a Instagram, es así como llegue a [goinsta](https://github.com/ahmdrz/goinsta) la cual maneja todo lo relacionado con las sesión de instagram y además maneja la subida de imágenes.
 
