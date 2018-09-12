@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package session;
+
+option go_package = "github.com/rodrwan/gridcube-challenge/publisher/service";
+
+service Service {
+    rpc UploadPicture(GetRequest) returns (GetResponse) {}
+}
+
+message GetRequest {
+    int32 size = 1;
+    string username = 2;
+    string password = 3;
+    string caption = 4;
+}
+
+message GetResponse {
+    string status = 1;
+}
+
