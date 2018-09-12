@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  auth:
+    build: ../auth
+    container_name: auth
+    ports:
+      - "8090:8090"
+    depends_on:
+      - "publisher"
+    networks:
+      - front-tier
+      - back-tier
+
+  publisher:
+    build: ../publisher
+    container_name: publisher
+    ports:
+      - "8091:8091"
+    networks:
+      - back-tier
+
+networks:
+  front-tier:
+  back-tier:
