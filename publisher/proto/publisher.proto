@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package session;
+package publisher;
 
 option go_package = "github.com/rodrwan/gridcube-challenge/publisher/service";
 
